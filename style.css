@@ -1,0 +1,930 @@
+      
+      /* boiler plate code */
+
+:root{
+    --pink:#e84393;
+}
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scrollbar-color: green;
+}
+html,body{
+    width: 99vw;
+    height: fit-content;
+}
+
+                /* navigation */
+
+header{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    background-color:white;
+
+}
+nav{
+    
+    width: 100%;
+    height: fit-content;
+    padding: 10px 8vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    background-color:white;
+
+}
+
+.nav1 h1{
+    font-size: 1.7vw;
+    font-weight: 800;
+}
+.nav1 h1 a{
+    text-decoration: none;
+    color: black;
+}
+.nav1 h1 span{
+ color: red;
+}
+.nav2{
+    width:40%;
+    /* background-color: aqua; */
+    padding-top: 4px; 
+    display: flex;  
+    justify-content: space-between;       
+}
+.bigScreen{
+    width: 90%;
+    /* background-color: #f71280; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#jaadu{
+    display: none;
+}
+.mobile{
+    display: flex;
+    align-items: center;
+}
+.nav2 ul li a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+    transition: all 0.2s;
+}
+.nav2 ul li a:hover{
+    color: var(--pink);
+}
+.mobile{
+    display: none;
+}
+.nav3{
+    width:15%;
+    /* background-color: chocolate; */
+}
+.nav3 ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    
+}
+.nav3 ul li a{
+    color: black;
+}
+.nav3 ul li a:hover{
+    color:#e84393;
+}
+
+ul li{
+    list-style: none; 
+}
+.nav3 ul li:nth-of-type(4n){
+    display: none;
+}
+
+            /* main body  */
+
+main{
+    width: 100%;
+    height: fit-content;
+    margin-top: 4vw;
+    /* background-color: #e84393; */
+}
+
+.landingPage{
+    width:100%;
+    height: 93vh;
+    background-image: url(../Resoures/bg.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+.intro{
+    width:35%;
+    height:fit-content;
+    /* background-color: chocolate; */
+    position: relative;
+    margin-left: 8vw;
+    /* right: 5vw; */
+    /* bottom: 10vw;
+    left: 5vw; */
+    
+}
+.intro h1{
+    font-size: 4.4vw;
+    font-weight: 800;
+}
+.intro h2{
+    font-size: 2.5vw;
+    font-weight: 700;
+    color: rgb(207,83,132);
+}
+.intro p{
+    font-size: 1vw;
+    margin-top: 10px;
+    opacity: 0.5;
+}
+.intro button{
+    background-color: black;
+    color: white;
+    padding: 12px 50px;
+    border:none;
+    margin-top: 1vw;
+    margin-left: 5px;
+    border-radius: 200px;
+    font-size: 1.2vw;
+    font-weight: 600;
+    transition: all 0.8s;
+    /* transform: scale(0.8); */
+}
+
+.intro button:hover{
+    background-color: var(--pink);
+    transform: scaleX(1.1)
+}
+
+        /* about session */
+
+#about{
+    margin-top: 2vw;
+    width: 100%;
+    height: fit-content;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+
+}
+.about{
+    width: 85%;
+    height: fit-content;
+    text-align: center;
+}
+.about h1{
+    font-size: 2.5vw;
+    font-weight: 800;
+    background-color:rgb(252, 211, 227);
+    margin-top: 5vw;
+}
+
+h1 span{
+    color:rgb(225, 25, 105);
+} 
+
+#bestSeller{
+    width: 100%;
+    height:100%;
+    display: flex;
+    margin-top: 3vw;
+    justify-content: space-between;
+    /* padding: 10px; */
+    /* background-color: white; */
+
+}
+.bestSellerLeft{
+    width: 50%;
+    height:100%;
+    background-color: whitesmoke;
+    padding: 10px 10px 0px 10px;
+    /* box-shadow: 5px 8px 5px rgba(0,0,0,0.2); */
+    position: relative; 
+}
+.bestSellerLeft video{
+    width:100%;
+    height: 100%;
+}
+.bestSellerLeft p{
+    position: absolute;
+    top: 150px;
+    background-color: aliceblue;
+    text-align: center;
+    width: 98%;
+    font-size: 2.2vw;
+    font-weight: 800;
+    color: black;
+
+}
+.bestSellerRight{
+    padding: 10px;
+    /* background-color: cornflowerblue; */
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1vw;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+.bestSellerRight{
+    font-size: 1.4vw;
+}
+
+.bestSellerRight p{
+    text-align: justify;
+    font-size: 1vw;
+    color: rgb(0,0,0,0.6);
+}
+.bestSellerRight button{
+    border-radius: 200px;
+    padding: 12px 50px;
+    background-color: black;
+    /* color: white; */
+    border: none;
+    font-size: 1.2vw;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.bestSellerRight button:hover{
+    background-color: rgb(225, 25, 105);
+    transform: scale(1.1);
+}
+
+        /* feature session */
+
+#feature{
+    width: 100%;
+    background-color: lightgrey;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+}
+.list{
+    width:88%;
+    height: fit-content;
+    /* background-color: darkkhaki; */
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+}
+.feature{
+    width: 24%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featureLeft{
+    padding: 10px;
+}
+.featureLeft i{
+    height: fit-content;
+    /* background-color: blue; */
+    font-size: 2vw;
+}
+.featureRight {
+    padding: 1vh;
+    /* background-color: #e84393; */
+    width: 100%;
+    letter-spacing:1px;
+}
+.featureRight h5{
+    font-size: 1vw;
+}
+.featureRight p{
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+
+
+
+        /* products session */
+
+#Products{
+    width: 100%;
+    height: fit-content;
+    /* background-color: #e84393; */
+    display: flex;
+    justify-content: center;
+    margin: 5vw 0vh;
+}
+.latestProduct{
+    width: 85%;
+    height: 100%;
+    /* margin-top: 2vw; */
+    
+}
+.latestProduct h1{
+    text-align: center;
+    background-color:rgb(252, 211, 227);
+    font-size: 2.8vw;
+    font-weight: 800;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    margin-top: 3vw;
+}
+.card{
+    width: 100%;
+    height: fit-content;
+    /* background-color: chartreuse; */
+    padding: 10px;
+    border: 1px solid rgb(172, 171, 171);
+    border-radius: 32px;
+    overflow: hidden;
+}
+.card_1{
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+.card_1 img{
+    width: 100%;
+    object-fit: cover;
+}
+.discount p{
+    position: absolute;
+    top: 0px;
+    margin: 1vh;
+    background-color: #f6a3cb;
+}
+.hov{
+    width: 100%;
+    padding:0vw 3.5vw;
+    background-color:#f71280;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    bottom:4px;
+    transform:scale(0) ;
+}
+.card_1:hover .hov{
+    transform: scale(1);
+
+}
+.hov2:hover{
+    background-color: #4d0327;
+    color: white;
+}
+
+.card_1 img{
+    border-radius: 32px;
+}
+.hov2 h2{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding: 0.5vh 1vw;
+}
+
+.card_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_2 h3{
+    font-size: 1.3vw;
+}
+.card_2 h4{
+    margin-bottom: 0.8vh;
+    font-size: 1.4vw;
+    color: #f71280;
+}
+.card_2 h4 span{
+    font-size: 0.5em;
+    text-decoration: line-through;
+    opacity: 0.7;
+    color: black;
+}
+
+            /* Reivew session */
+
+#Review{
+    width:100%;
+    /* background-color: rgb(16, 100, 174); */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+.customerReview{
+    width: 85%;
+}
+.customerReview h1{
+    background-color:rgb(252, 211, 227);
+    font-size: 2.8vw;
+    font-weight: 800;
+    width: 100%;
+    margin-bottom: 2.5vw;
+
+}
+.reviewBox{
+    /* background-color: darkkhaki; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0vw 1vw;
+}
+.reviewBox1{
+    background-color: whitesmoke;
+    margin: 1vw;
+    padding: 1vw;
+    border:1px solid black;
+    border-radius: 5px;
+    text-align: left;
+    /* color: #ac0656; */
+    font-size: 1.8vw;
+}
+.reviewBox1 i{
+    color: #ac0656;
+}
+.reviewBox1 p{
+    font-size: 0.8vw;
+    margin-top: 1vh;
+}
+.customerId{
+    display: flex;
+    margin-top: 1vw;
+    align-items: center;
+}
+.customerId img{
+    width: 20%;
+    border-radius: 50%;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2vw;
+    font-size: 1vw;
+    /* background-color: darkcyan; */
+}
+
+#contact{
+    width: 100%;
+    /* background-color: gold; */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vw;
+}
+.contactUs{
+    width: 85%;
+}
+.contactUs h1{
+    background-color:rgb(252, 211, 227);
+    font-size: 2.8vw;
+    font-weight: 800;
+    width: 100%;
+    text-align: center;
+}
+.cont{
+    width: 100%;
+    height: 90%;
+    padding: 1vw;
+    /* background-color: darkgreen; */
+    display: flex;
+}
+.contLeft{
+    width: 50%;
+    height: 75%;
+    /* background-color:red; */
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    position: relative;
+    top:5vw;
+    padding: 2.5vw;
+    border: 1px solid lightgrey;
+    border-radius: 32px;
+
+    /* box-shadow: 2px 2px 10px black; */
+}
+input{
+    border-radius: 32px;
+    border:1px solid lightgrey;
+    padding: 0.8vw 1.5vw;
+}
+#message{
+    padding-bottom:9vw;
+    /* padding-left: 1.5vw; */
+    padding-top: 1vw;
+}
+button{
+    background-color: black;
+    color: white;
+    border-radius: 200px;
+    border: none;
+    padding: 0.7vw;
+    width: 40%;
+    font-size: 1.2vw;
+    font-size: 600;
+}
+.contRight{
+    width: 50%;
+    /* background-color:yellow; */
+}
+.contRight img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+.foot{
+    width: 85%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+    
+}
+column1{
+    line-height:4vh;
+}
+column1 h5 ,a{
+    /* opacity: 0.6; */
+    color: rgba(0,0,0,0.7);
+}
+form button:hover{
+    background-color: var(--pink);
+}
+h5 a{
+    text-decoration: none;
+}
+h5 a:hover{
+    color: #e84393;
+    text-decoration: underline;
+}
+h5:hover{
+    color: #e84393;
+}
+hr{
+    padding: 1px;
+    margin-bottom: 2vw;
+    
+}
+
+
+
+        /* Media Query for mobile */
+
+        /* Navigation */
+
+@media (max-width:600px){
+
+    .nav1 h1{
+        font-size: 5vw;
+        font-weight: 800;
+    }
+    .nav2{
+        width:78%;
+        height: fit-content;
+                
+    }
+
+    .bigScreen{
+        display:none;
+        position: fixed;
+        width: 80%;
+        height: 90%;
+        top: 10vw;
+        right: 5vw;
+        background-color: rgba(255, 255, 255, 0.09);
+        backdrop-filter: blur(10px);
+
+        /* color: green; */
+    }
+    .bigScreen li{
+        /* background-color: #f71280; */
+        height: 6%;
+        width: 90%;
+    }
+   
+    #jaadu{
+        display: block;
+        font-size: 8vw;
+        margin-bottom: 5vw;
+    }
+    #jaadu a i{
+        color: red;
+    }
+    .mobile{
+        display: block;
+        position: relative;
+        left: 60vw;
+        font-size: 5vw;
+    }
+
+
+    .nav3{
+        display: none;
+    }
+    
+    
+                /* main body  */
+    
+    main{
+        margin-top: 5vw;
+    }
+    
+    .landingPage{
+        height:33vh;  
+    
+    }
+    .intro{
+        width:40%;
+        margin-left: 7vw;
+        bottom: 10vw;  
+    }
+    .intro h1{
+        font-size: 5vw;
+        font-weight: 800;
+    }
+    .intro h2{
+        font-size: 3.2vw;
+        font-weight: 800;
+        margin-top: 1vw;
+    }
+    .intro p{
+        font-size:1.8vw;
+        margin-top: 5px;
+    }
+    .intro button{
+        padding:5px 25px;
+        margin-top: 2.5vw;
+        width: fit-content;
+        font-size: 3vw;
+        margin-left: 0px;
+        margin-bottom: 2vw;
+    }
+
+    .about h1{
+        font-size: 8vw;
+        font-weight: 800;
+        background-color:rgb(245, 148, 185);
+    }
+
+    #bestSeller{
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+
+    .bestSellerLeft{
+        width: 100%;
+    }
+
+    .bestSellerLeft p{
+        top: 90px;
+        width: 94%;
+        font-size: 5vw;
+    }
+
+    .bestSellerRight{
+        width: 100%;
+        gap: 2vw;
+    }
+
+    .bestSellerRight h2{
+        font-size: 4vw;
+    }
+    
+    .bestSellerRight p{
+        text-align: justify;
+        font-size: 2.5vw;
+        color: rgb(0,0,0,0.8);
+    }
+    .bestSellerRight button{
+        padding:6px 3px;
+        font-size: 3vw;
+        font-weight: 600;
+    }
+
+                /* feature session */
+    
+    .list{
+        width:88%;
+        height: fit-content;
+        /* background-color: darkkhaki; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2vw;
+    }
+    .feature {
+        width:100%;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+    
+    .featureLeft i{
+        font-size: 4vw;
+    }
+   
+    .featureRight h5{
+        font-size: 3vw;
+    }
+    .featureRight p{
+        font-size: 2vw;
+        font-weight: 600;
+    }
+ 
+    
+            /*  Product session*/
+
+    .latestProduct h1{
+        background-color:rgb(252, 211, 227);
+        font-size: 8vw;
+        padding: 2vw;
+       
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .card{
+        width: 100%;
+        padding: 30px;
+        padding-bottom: 10px;
+    }
+    .card_1{
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+    .card_1 img{
+        width: 100%;
+
+    }
+    .discount p{
+        margin: -10px;
+        background-color: #f6a3cb;
+        padding:2px  5px;
+        border-radius: 10px;
+    }
+    .hov{
+        width: 100%;
+        background-color:#f769ad;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+ 
+    .card_1 img{
+        border-radius: 32px;
+    }
+    .hov2 h2{
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        padding: 0.5vh 1vw;
+    }
+    
+
+    .card_2 h3{
+        font-size: 5.5vw;
+        
+    }
+    .card_2 h4{
+        font-size: 3.4vw;
+    }
+    .card_2 h4 span{
+        font-size: 0.7em;
+     
+    }
+
+                /* customer Review */
+
+    .customerReview h1{
+        background-color:rgb(252, 211, 227);
+        font-size: 8vw;
+        margin-bottom: 4.5vw;
+    
+    }
+    .reviewBox{
+        flex-direction: column;
+        padding: 2vw 1vw;
+    }
+    .reviewBox1{
+        padding: 2vw;
+        border:1px solid grey;
+        border-radius: 15px;
+        text-align: justify;
+        background-color: white;
+    }
+    .reviewBox1 i{
+        font-size: 4.5vw;
+    }
+    .reviewBox1 p{
+        font-size: 2.8vw;
+        margin-top: 1vh;
+    }
+    .customerId{
+        display: flex;
+        margin-top: 1vw;
+        align-items: center;
+    }
+    .customerId img{
+        width: 30%;
+    }
+    .name{
+        margin-left: 2vw;
+    }
+    .name h2{
+        font-size: 5vw;
+    }
+    .name h4{
+        font-size: 3vw;
+    }
+
+
+            /* contact session */
+
+    .contactUs h1{ 
+        font-size: 8vw;
+    }
+    .cont{
+        height: fit-content;
+        padding: 2vw;
+        flex-direction: column;
+    }
+    .contLeft{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        gap: 2.5vw;
+        top:0vw;
+        padding: 4.5vw;
+        border: 1px solid rgb(158, 156, 156);
+        border-radius: 20px;
+        margin: 1vh;
+    }
+    input{
+        border-radius: 8px;
+        padding: 0.8vw 1.5vw;
+        border: 1px solid rgb(158, 156, 156);
+
+    }
+    form button{
+        padding: 5px 25px;
+        width: fit-content;
+        font-size: 3.2vw;
+        font-size: 600;
+    }
+
+    .contRight{
+        width: 100%;
+        margin-top: 4vw;
+        padding: 1vw;
+    }
+
+    .foot{
+        flex-direction: column;
+        align-items: center;  
+    }
+
+    column1{
+        width: 60%;      
+    }
+
+    column1 h5,h2{
+        text-align: center;
+    }
+    
+}
